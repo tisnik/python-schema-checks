@@ -1,0 +1,25 @@
+Create Virtualenv for Python deps ...
+Using base prefix '/usr'
+New python executable in /home/ptisnovs/temp/schemagic/schemagic5/venv/bin/python3
+Not overwriting existing python script /home/ptisnovs/temp/schemagic/schemagic5/venv/bin/python (you must use /home/ptisnovs/temp/schemagic/schemagic5/venv/bin/python3)
+Installing setuptools, pip, wheel...done.
+Running virtualenv with interpreter /usr/bin/python3
+Requirement already satisfied: schemagic in ./venv/lib/python3.6/site-packages (from -r requirements.txt (line 1))
+
+
+
+{<class 'str'>: <function is_int at 0x7f21b35816a8>}
+{'prvni': 1, 'druha': 2, 'treti': 3}
+pass
+
+
+
+{<class 'str'>: <function is_int at 0x7f21b35816a8>}
+{'prvni': 1.5, 'druha': '2', 'treti': 3}
+Expected type: <class 'int'>, but the value has type <class 'float'>
+
+
+
+{<class 'str'>: <function is_int at 0x7f21b35816a8>}
+{'prvni': 'x', 'druha': 'y', 'treti': 'z'}
+Expected type: <class 'int'>, but the value has type <class 'str'>
