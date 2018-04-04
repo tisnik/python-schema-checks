@@ -31,3 +31,5 @@ string_to_int_map = {str:is_int}
 validate(string_to_int_map, {"prvni": 1, "druha": 2, "treti": 3})
 validate(string_to_int_map, {"prvni": 1.5, "druha": "2", "treti": 3})
 validate(string_to_int_map, {"prvni": "x", "druha": "y", "treti": "z"})
+validate(string_to_int_map, {1: "x", 2: "y", 3: "z"})
+validate(string_to_int_map, {1: 1, 2: 2, 3: 3})
