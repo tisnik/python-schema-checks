@@ -18,8 +18,10 @@ def validate(schema, data):
 integer_list = [int]
 string_list = [str]
 
+validate(integer_list, [])
 validate(integer_list, [1, 2, 3])
 validate(integer_list, ["hello", "world", "!"])
 
+validate(string_list, [])
 validate(string_list, [1, 2, 3, 4])
 validate(string_list, ["hello", "world", "!"])

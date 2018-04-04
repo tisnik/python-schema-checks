@@ -8,7 +8,7 @@ def validate(schema, data):
         print("\n\n")
         print(schema)
         print(data)
-        validate_against_schema(schema, data)
+        print(validate_against_schema(schema, data))
         print("pass")
     except (ValueError, TypeError, AssertionError) as e:
         print(e)
