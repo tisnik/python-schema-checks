@@ -31,3 +31,23 @@ def test3():
     assert user == {"name": "Eda",
                     "surname": "Wasserfall",
                     "id": 0}
+
+
+users = S([S({"name": str,
+             "surname": str,
+             "id": pos})])
+
+def test4():
+    assert users == [{"name": "Eda",
+                      "surname": "Wasserfall",
+                      "id": 1},
+                     {"name": "Varel",
+                      "surname": "Frištenský",
+                      "id": 2}]
+
+def test5():
+    assert users == [{"name": "Eda",
+                      "surname": "Wasserfall",
+                      "id": 0},
+                     {"surname": "Frištenský",
+                      "id": 2}]

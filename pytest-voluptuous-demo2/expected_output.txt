@@ -2,9 +2,9 @@
 platform linux -- Python 3.4.3, pytest-3.3.1, py-1.5.2, pluggy-0.6.0
 rootdir: /home/tester/temp/python/python-schema-checks/pytest-voluptuous-demo2, inifile:
 plugins: voluptuous-1.0.2
-collected 3 items
+collected 5 items
 
-pytest-voluptuous-demo2.py .FF                                           [100%]
+pytest-voluptuous-demo2.py .FF.F                                         [100%]
 
 =================================== FAILURES ===================================
 ____________________________________ test2 _____________________________________
@@ -26,4 +26,16 @@ E       AssertionError: assert failed to validation error(s):
 E         - id: positive integer value expected, but got 0 instead for dictionary value @ data['id']
 
 pytest-voluptuous-demo2.py:31: AssertionError
-====================== 2 failed, 1 passed in 0.04 seconds ======================
+____________________________________ test5 _____________________________________
+
+    def test5():
+>       assert users == [{"name": "Eda",
+                          "surname": "Wasserfall",
+                          "id": 0},
+                         {"surname": "Frištenský",
+                          "id": 2}]
+E       AssertionError: assert failed to validation error(s):
+E         - 0.id: positive integer value expected, but got 0 instead for dictionary value @ data[0]['id']
+
+pytest-voluptuous-demo2.py:49: AssertionError
+====================== 3 failed, 2 passed in 0.05 seconds ======================
