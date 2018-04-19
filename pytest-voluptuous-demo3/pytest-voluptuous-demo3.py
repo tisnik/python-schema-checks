@@ -11,7 +11,6 @@ import requests
 def uuid4(string):
     val = UUID(string, version=4)
     if val.hex != string.replace('-', ''):
-        print("HERE")
         raise Invalid("the string '{s}' is not valid UUID4".format(s=string))
 
 
