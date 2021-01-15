@@ -49,6 +49,7 @@ users = S([S({"name": str,
              "surname": str,
               "id": pos})])
 
+
 def test4():
     assert users == [{"name": "Eda",
                       "surname": "Wasserfall",
