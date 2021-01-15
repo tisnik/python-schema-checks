@@ -69,7 +69,7 @@ def test6():
 def test7():
     assert user2 == {"name": "Eda",
                      "surname": "Wasserfall",
-                    "id": 0}
+                     "id": 0}
 
 
 def test8():
