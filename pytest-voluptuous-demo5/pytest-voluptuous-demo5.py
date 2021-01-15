@@ -87,7 +87,7 @@ user3 = S({"name": str,
 
 def test9():
     assert user3 == {"name": "Eda",
-                    "surname": "Wasserfall",
+                     "surname": "Wasserfall",
                     "id": 1}
 
 
