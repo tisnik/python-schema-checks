@@ -125,5 +125,3 @@ def test14():
     assert user4 == {"name": "Eda",
                      "surname": "Wasserfall",
                      "zip": 12345}
-
-
