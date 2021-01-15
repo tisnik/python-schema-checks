@@ -58,6 +58,7 @@ def test4():
                       "surname": "Frištenský",
                       "id": 2}]
 
+
 def test5():
     assert users == [{"name": "Eda",
                       "surname": "Wasserfall",
