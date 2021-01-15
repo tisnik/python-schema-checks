@@ -113,7 +113,7 @@ user4 = S({Required("name"): str,
 def test12():
     assert user4 == {"name": "Eda",
                      "surname": "Wasserfall",
-                    "id": 1}
+                     "id": 1}
 
 
 def test13():
