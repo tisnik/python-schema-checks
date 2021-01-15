@@ -2,7 +2,7 @@
 # vim: set fileencoding=utf-8
 
 #
-#  (C) Copyright 2018  Pavel Tisnovsky
+#  (C) Copyright 2018, 2021  Pavel Tisnovsky
 #
 #  All rights reserved. This program and the accompanying materials
 #  are made available under the terms of the Eclipse Public License v1.0
@@ -42,6 +42,7 @@ def test5():
 
 
 binary_numbers = S([0, 1])
+
 
 def test6():
     assert binary_numbers == [0, 0, 0]
