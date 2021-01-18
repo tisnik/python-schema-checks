@@ -42,7 +42,8 @@ POSITIONS = ["QA", "DevOps", "Admin", "Docs", "HR"]
 employee = Schema({"name": And(str, len),
                    "surname": And(str, len),
                    "id": positive_integer,
-                   "salary": Or(positive_integer, positive_float, lambda x: x > 10000.0 and x < 99999.0),
+                   "salary": Or(positive_integer, positive_float,
+                                lambda x: x > 10000.0 and x < 99999.0),
                    "position": And(str, lambda s: s in POSITIONS)})
 
 verbose_mode = "-v" in argv
