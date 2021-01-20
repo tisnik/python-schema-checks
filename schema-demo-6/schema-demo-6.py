@@ -87,7 +87,7 @@ validate(employee, {"name": "Eda",
                     "id": 2,
                     "salary": 15000,
                     "position": "QA"},
-                    verbose_mode)
+         verbose_mode)
 
 validate(employee, {"name": "Eda",
                     "surname": "Wasserfall",
