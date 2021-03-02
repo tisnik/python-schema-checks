@@ -13,12 +13,15 @@
 #      Pavel Tisnovsky
 #
 
+"""Basic usage of pytest_voluptuous library in unit tests."""
+
 from pytest_voluptuous import S, Partial, Exact
 from voluptuous import Invalid
 from voluptuous.validators import All, Length
 
 
 def pos(value):
+    """Predicate for positive integer values."""
     if type(value) is not int or value <= 0:
         raise Invalid("positive integer value expected, but got {v} instead".format(v=value))
 
