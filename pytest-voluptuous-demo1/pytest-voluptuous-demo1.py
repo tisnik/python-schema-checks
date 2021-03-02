@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Basic usage of pytest_voluptuous library in unit tests."""
+
 from pytest_voluptuous import S, Partial, Exact
 from voluptuous.validators import All, Length
 
