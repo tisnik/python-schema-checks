@@ -34,6 +34,7 @@ def validate(schema, data, verbose_mode=False):
 
 
 def positive_integer(value):
+    """Predicate for positive integer value."""
     return type(value) is int and value > 0
 
 
