@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Usage of Schema class."""
+
 from sys import argv
 from schema import Schema, SchemaError
 
