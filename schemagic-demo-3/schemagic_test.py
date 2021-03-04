@@ -34,6 +34,7 @@ def validate(schema, data):
 
 
 def is_type(value, expected_type):
+    """Predicate for type of given value."""
     assert type(value) is expected_type
 
 
