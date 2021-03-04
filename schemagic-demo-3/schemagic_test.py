@@ -39,6 +39,7 @@ def is_type(value, expected_type):
 
 
 def is_int(value):
+    """Predicate for integer values."""
     is_type(value, int)
 
 
