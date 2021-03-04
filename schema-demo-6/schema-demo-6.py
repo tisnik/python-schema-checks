@@ -21,6 +21,7 @@ from schema import Schema, SchemaError, And, Or, Optional, Regex
 
 
 def validate(schema, data, verbose_mode=False):
+    """Function that performs schema check validation."""
     try:
         print("\n\n")
         if verbose_mode:
