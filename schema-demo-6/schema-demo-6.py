@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Usage of Schema, And, Or, Optional, and Regex classes."""
+
 import re
 from sys import argv
 from schema import Schema, SchemaError, And, Or, Optional, Regex
