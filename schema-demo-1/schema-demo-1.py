@@ -13,6 +13,8 @@
 #      Pavel Tisnovsky
 #
 
+"""Usage of Schema class."""
+
 from schema import Schema, SchemaError
 
 
