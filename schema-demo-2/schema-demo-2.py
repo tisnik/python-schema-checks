@@ -31,6 +31,7 @@ def validate(schema, data):
 
 
 def pos(value):
+    """Predicate for positive integer values."""
     return type(value) is int and value > 0
 
 
