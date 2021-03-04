@@ -19,6 +19,7 @@ from schema import Schema, SchemaError
 
 
 def validate(schema, data):
+    """Function that performs schema check validation."""
     try:
         print("\n\n")
         print(schema)
