@@ -50,6 +50,7 @@ def name_str(value):
 
 
 def pos_int(value):
+    """Predicate for positive integer values."""
     is_type(value, int)
     if value <= 0:
         msg = "Positive number expected, but got {value} instead".format(value=value)
