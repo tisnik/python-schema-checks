@@ -22,6 +22,7 @@ number_list = S([int, float, complex])
 
 
 def test1():
+    """Unit test for number list schema."""
     assert [1, 2, 3] == number_list
     assert [1, 2, 3.2] == number_list
 
