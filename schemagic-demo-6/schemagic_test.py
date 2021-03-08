@@ -34,6 +34,7 @@ def validate(schema, data):
 
 
 def is_type(value, expected_type):
+    """Predicate for type of given value."""
     actual_type = type(value)
     if actual_type is not expected_type:
         msg = "Expected type: {expected}, but the value has type {actual}".format(
