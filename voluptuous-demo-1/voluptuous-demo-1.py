@@ -32,6 +32,7 @@ def validate(schema, data):
 
 
 def pos(value):
+    """Predicate for positive integer values."""
     if type(value) is not int or value <= 0:
         raise Invalid("positive integer value expected, but got {v} instead".format(v=value))
 
