@@ -27,6 +27,7 @@ def test1():
 
 
 def test2():
+    """Unit test for number list schema."""
     assert [2j, 4j, 5j] == number_list
     assert [1+2j, 3+4j, 5j] == number_list
 
