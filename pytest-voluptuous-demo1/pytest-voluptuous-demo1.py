@@ -52,4 +52,5 @@ def test6():
 
 
 def test7():
+    """Unit test for binary numbers schema."""
     assert binary_numbers == [1, 2, 3]
