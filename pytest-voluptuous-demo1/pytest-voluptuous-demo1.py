@@ -36,6 +36,7 @@ def test3():
 
 
 def test4():
+    """Unit test for number list schema."""
     assert ["1", "2", "3"] == number_list
 
 
