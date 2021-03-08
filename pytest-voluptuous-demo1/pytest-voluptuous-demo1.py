@@ -47,6 +47,7 @@ binary_numbers = S([0, 1])
 
 
 def test6():
+    """Unit test for binary numbers schema."""
     assert binary_numbers == [0, 0, 0]
     assert binary_numbers == [1, 1, 0]
 
