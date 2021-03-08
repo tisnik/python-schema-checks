@@ -43,6 +43,7 @@ def is_type(value, expected_type):
 
 
 def name_str(value):
+    """Check if value represents a name."""
     if not re.fullmatch("[A-Z][a-z]+", value):
         msg = "Proper name expected, but got '{value}' instead".format(value=value)
         raise TypeError(msg)
