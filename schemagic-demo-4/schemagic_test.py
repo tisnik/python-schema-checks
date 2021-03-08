@@ -47,6 +47,7 @@ def is_int(value):
 
 
 def is_float(value):
+    """Predicate for floating point values."""
     is_type(value, float)
 
 
