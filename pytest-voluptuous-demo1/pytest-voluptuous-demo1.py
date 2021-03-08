@@ -40,6 +40,7 @@ def test4():
 
 
 def test5():
+    """Unit test for number list schema."""
     assert (1, 2, 3) == number_list
 
 
