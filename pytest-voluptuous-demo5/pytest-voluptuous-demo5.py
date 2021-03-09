@@ -118,6 +118,7 @@ user4 = S({Required("name"): str,
 
 
 def test12():
+    """Unit test for the data record."""
     assert user4 == {"name": "Eda",
                      "surname": "Wasserfall",
                      "id": 1}
