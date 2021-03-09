@@ -76,6 +76,7 @@ def test7():
 
 
 def test8():
+    """Unit test for the data record."""
     assert user2 == {"name": "Eda",
                      "surname": "Wasserfall"}
 
