@@ -125,6 +125,7 @@ def test12():
 
 
 def test13():
+    """Unit test for the data record."""
     assert user4 == {"name": "Eda",
                      "surname": "Wasserfall"}
 
