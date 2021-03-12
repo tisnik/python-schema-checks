@@ -57,6 +57,7 @@ users = S([S({"name": str,
 
 
 def test4():
+    """Unit test for user-defined schema."""
     assert users == [{"name": "Eda",
                       "surname": "Wasserfall",
                       "id": 1},
