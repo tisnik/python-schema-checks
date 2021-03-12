@@ -32,6 +32,7 @@ user = S({"name": str,
 
 
 def test1():
+    """Unit test for user-defined schema."""
     assert user == {"name": "Eda",
                     "surname": "Wasserfall",
                     "id": 1}
