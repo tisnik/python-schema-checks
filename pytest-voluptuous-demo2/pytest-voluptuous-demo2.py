@@ -67,6 +67,7 @@ def test4():
 
 
 def test5():
+    """Unit test for user-defined schema."""
     assert users == [{"name": "Eda",
                       "surname": "Wasserfall",
                       "id": 0},
