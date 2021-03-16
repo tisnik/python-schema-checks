@@ -42,6 +42,7 @@ def test2():
 
 
 def test3():
+    """Unit test for the data record."""
     assert user == {"name": "Eda",
                     "surname": "Wasserfall",
                     "id": 0}
