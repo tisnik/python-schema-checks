@@ -23,6 +23,7 @@ import requests
 
 
 def uuid4(string):
+    """Predicate for UUID value stored in string."""
     val = UUID(string, version=4)
     if val.hex != string.replace('-', ''):
         raise Invalid("the string '{s}' is not valid UUID4".format(s=string))
