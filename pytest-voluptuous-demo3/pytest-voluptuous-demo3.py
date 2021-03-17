@@ -43,5 +43,6 @@ def test_uuid_2():
 
 
 def test_uuid_returned_by_the_service():
+    """Test if value returned by HTTP service is proper UUID."""
     response = requests.get("https://httpbin.org/uuid").json()
     assert response == uuid_response_struct
