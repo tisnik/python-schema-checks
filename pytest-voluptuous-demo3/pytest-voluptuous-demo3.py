@@ -33,6 +33,7 @@ uuid_response_struct = S({"uuid": uuid4})
 
 
 def test_uuid_1():
+    """Test if the provided value is proper UUID."""
     assert {"uuid": "00ebf64b-c15e-4b5d-846a-28971dc05796"} == uuid_response_struct
 
 
