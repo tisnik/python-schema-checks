@@ -23,6 +23,7 @@ import re
 
 
 def test_the_anything_endpoint_1():
+    """Test the endpoint that returns a JSON payload."""
     anything_struct = S(dict)
     response = requests.get("https://httpbin.org/anything").json()
     assert response == anything_struct
