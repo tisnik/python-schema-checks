@@ -49,6 +49,7 @@ def origin(value):
 
 
 def test_the_anything_endpoint_3():
+    """Test the endpoint that returns a JSON payload."""
     anything_struct = S({"args": dict,
                          "data": str,
                          "files": dict,
