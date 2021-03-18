@@ -37,6 +37,7 @@ def positive_integer(value):
 
 
 def salary(value):
+    """Validate if salary has proper value."""
     return type(value) is float and value > 10000.0 and value < 99999.9
 
 
