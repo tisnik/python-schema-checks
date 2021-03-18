@@ -52,6 +52,7 @@ class Salary:
 
 
 class Position:
+    """Class representing custom validator positions/roles."""
     POSITIONS = ["QA", "DevOps", "Admin", "Docs", "HR"]
 
     def validate(self, value):
