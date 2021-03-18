@@ -38,6 +38,7 @@ def positive_integer(value):
 
 
 def positive_float(value):
+    """Validate for positive float value."""
     return type(value) is float and value > 0
 
 
