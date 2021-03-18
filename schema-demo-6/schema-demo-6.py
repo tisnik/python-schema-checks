@@ -60,6 +60,7 @@ class Position:
 
 
 class UniqueId:
+    """Class representing custom validator for unique IDs."""
 
     def __init__(self):
         """Constructor for a class UniqueId."""
