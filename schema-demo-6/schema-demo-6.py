@@ -21,7 +21,7 @@ from schema import Schema, SchemaError, And, Or, Optional, Regex
 
 
 def validate(schema, data, verbose_mode=False):
-    """Function that performs schema check validation."""
+    """Implement custom schema check validation."""
     try:
         print("\n\n")
         if verbose_mode:
@@ -42,6 +42,8 @@ def is_float(value):
 
 
 class Salary:
+    """Class representing validator for salary amounts."""
+
     def validate(self, value):
         """Implement schema check validation."""
         if not is_integer(value) and not is_float(value):
