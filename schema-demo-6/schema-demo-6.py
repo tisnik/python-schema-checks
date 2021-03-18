@@ -53,10 +53,11 @@ class Salary:
 
 class Position:
     """Class representing custom validator positions/roles."""
+
     POSITIONS = ["QA", "DevOps", "Admin", "Docs", "HR"]
 
     def validate(self, value):
-        """Method that performs schema check validation."""
+        """Implement schema check validation."""
         if value not in Position.POSITIONS:
             raise SchemaError("Unknown position '{p}'".format(p=value))
 
@@ -65,11 +66,11 @@ class UniqueId:
     """Class representing custom validator for unique IDs."""
 
     def __init__(self):
-        """Constructor for a class UniqueId."""
+        """Construct a validator for UniqueId."""
         self._ids = set()
 
     def validate(self, value):
-        """Method that performs schema check validation."""
+        """Implement schema check validation."""
         if value in self._ids:
             raise SchemaError("ID {id} is not unique".format(id=value))
         self._ids.add(value)
