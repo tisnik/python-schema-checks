@@ -30,6 +30,7 @@ def test_the_anything_endpoint_1():
 
 
 def test_the_anything_endpoint_2():
+    """Test the endpoint that returns a JSON payload."""
     anything_struct = S({"args": dict,
                          "data": str,
                          "files": dict,
