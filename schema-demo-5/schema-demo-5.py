@@ -39,10 +39,12 @@ def positive_integer(value):
 
 
 def positive_float(value):
+    """Validate for positive float value."""
     return type(value) is float and value > 0
 
 
 def name_str(value):
+    """Validate for proper names."""
     return re.fullmatch("[A-Z][a-z]+", value)
 
 
