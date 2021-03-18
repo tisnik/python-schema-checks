@@ -43,6 +43,7 @@ def is_float(value):
 
 class Salary:
     def validate(self, value):
+        """Implement schema check validation."""
         if not is_integer(value) and not is_float(value):
             raise SchemaError("Salary has unexpected type {t}".format(t=type(value)))
         elif value <= 10000:
