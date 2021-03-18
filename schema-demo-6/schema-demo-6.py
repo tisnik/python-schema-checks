@@ -62,6 +62,7 @@ class Position:
 class UniqueId:
 
     def __init__(self):
+        """Constructor for a class UniqueId."""
         self._ids = set()
 
     def validate(self, value):
