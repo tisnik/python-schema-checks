@@ -38,6 +38,7 @@ def is_integer(value):
 
 
 def is_float(value):
+    """Validate if value represents a float value."""
     return type(value) is float
 
 
