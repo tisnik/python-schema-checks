@@ -20,6 +20,7 @@ import pycodestyle
 
 
 def main():
+    """Entry point to Python code style checker tool."""
     files = list(Path(".").rglob("*.py"))
 
     style = pycodestyle.StyleGuide(quiet=False, config_file='setup.cfg')
