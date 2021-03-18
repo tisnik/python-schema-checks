@@ -34,6 +34,7 @@ def validate(schema, data, verbose_mode=False):
 
 
 def is_integer(value):
+    """Validate if value represents an integer value."""
     return type(value) is int
 
 
