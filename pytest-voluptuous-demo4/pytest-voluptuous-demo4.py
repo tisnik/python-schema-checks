@@ -45,6 +45,7 @@ def test_the_anything_endpoint_2():
 
 
 def origin(value):
+    """Check if the IP address is correct."""
     if not re.fullmatch(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", value):
         raise Invalid("wrong input {i}, IP address expected".format(i=value))
 
