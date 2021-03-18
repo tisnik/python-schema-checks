@@ -55,6 +55,7 @@ class Position:
     POSITIONS = ["QA", "DevOps", "Admin", "Docs", "HR"]
 
     def validate(self, value):
+        """Method that performs schema check validation."""
         if value not in Position.POSITIONS:
             raise SchemaError("Unknown position '{p}'".format(p=value))
 
@@ -67,7 +68,7 @@ class UniqueId:
         self._ids = set()
 
     def validate(self, value):
-        """Function that performs schema check validation."""
+        """Method that performs schema check validation."""
         if value in self._ids:
             raise SchemaError("ID {id} is not unique".format(id=value))
         self._ids.add(value)
