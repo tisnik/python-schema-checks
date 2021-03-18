@@ -65,6 +65,7 @@ class UniqueId:
         self._ids = set()
 
     def validate(self, value):
+        """Function that performs schema check validation."""
         if value in self._ids:
             raise SchemaError("ID {id} is not unique".format(id=value))
         self._ids.add(value)
