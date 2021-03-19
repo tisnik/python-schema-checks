@@ -20,7 +20,7 @@ from schema import Schema, SchemaError
 
 
 def validate(schema, data, verbose_mode=False):
-    """Function that performs schema check validation."""
+    """Perform schema validation check."""
     try:
         print("\n\n")
         if verbose_mode:
