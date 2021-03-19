@@ -22,7 +22,7 @@ from schemagic import validate_against_schema
 
 
 def validate(schema, data):
-    """Function that performs schema check validation."""
+    """Perform schema validation check."""
     try:
         print("\n\n")
         print(schema)
