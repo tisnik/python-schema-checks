@@ -46,7 +46,7 @@ def is_int(value):
     is_type(value, int)
 
 
-string_to_int_map = {str:is_int}
+string_to_int_map = {str: is_int}
 
 validate(string_to_int_map, {"prvni": 1, "druha": 2, "treti": 3})
 validate(string_to_int_map, {"prvni": 1.5, "druha": "2", "treti": 3})
