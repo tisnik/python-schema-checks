@@ -20,7 +20,7 @@ from voluptuous import Invalid
 
 
 def validate(schema, data):
-    """Function that performs schema check validation."""
+    """Perform schema validation check."""
     try:
         print("\n\n")
         print(schema)
